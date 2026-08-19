@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>আমার ওয়েবসাইট</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+body{background:#f5f7fb;color:#1f2937}
+header{background:#fff;padding:16px 6%;display:flex;justify-content:space-between;align-items:center;box-shadow:0 2px 12px #00000012;position:sticky;top:0;z-index:10}
+.logo{font-size:23px;font-weight:700;color:#2563eb}
+nav a{color:#374151;text-decoration:none;margin-left:20px;font-size:15px}
+.hero{min-height:78vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:40px 20px;background:linear-gradient(135deg,#eef4ff,#fff)}
+.hero-content{max-width:720px}
+.badge{display:inline-block;background:#dbeafe;color:#1d4ed8;padding:8px 14px;border-radius:30px;margin-bottom:18px;font-size:14px}
+h1{font-size:clamp(36px,7vw,60px);line-height:1.1;margin-bottom:18px}
+.hero p{font-size:18px;color:#6b7280;line-height:1.7;margin-bottom:28px}
+.btn{display:inline-block;background:#2563eb;color:white;text-decoration:none;padding:14px 25px;border-radius:9px;font-weight:700}
+section{padding:65px 6%}
+.section-title{text-align:center;font-size:32px;margin-bottom:12px}
+.section-text{text-align:center;color:#6b7280;margin-bottom:35px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:1000px;margin:auto}
+.card{background:#fff;padding:28px;border-radius:16px;box-shadow:0 5px 20px #0000000d;text-align:center}
+.card h3{margin:15px 0 10px}
+.card p{color:#6b7280;line-height:1.6}
+.icon{font-size:35px}
+.contact{background:#fff;text-align:center}
+footer{background:#111827;color:#fff;text-align:center;padding:24px}
+@media(max-width:700px){
+header{flex-direction:column;gap:12px}
+nav a{margin:0 7px}
+.cards{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">আমার ওয়েবসাইট</div>
+  <nav>
+    <a href="#home">হোম</a>
+    <a href="#about">সম্পর্কে</a>
+    <a href="#contact">যোগাযোগ</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-content">
+    <span class="badge">আপনার নতুন ওয়েবসাইট</span>
+    <h1>আপনার আইডিয়াকে অনলাইনে নিয়ে আসুন</h1>
+    <p>এই জায়গায় আপনার ওয়েবসাইটের মূল পরিচিতি থাকবে। পরে আপনার প্রয়োজন অনুযায়ী নাম, লেখা, ছবি ও ফিচার যোগ করা যাবে।</p>
+    <a class="btn" href="#about">আরও দেখুন</a>
+  </div>
+</section>
+
+<section id="about">
+  <h2 class="section-title">এখানে কী থাকবে?</h2>
+  <p class="section-text">পরে আপনার প্রয়োজন অনুযায়ী এই অংশগুলো পরিবর্তন করা যাবে।</p>
+  <div class="cards">
+    <div class="card"><div class="icon">🚀</div><h3>দ্রুত</h3><p>সহজ ও দ্রুত লোড হওয়ার জন্য তৈরি বেসিক কাঠামো।</p></div>
+    <div class="card"><div class="icon">📱</div><h3>মোবাইল ফ্রেন্ডলি</h3><p>ফোন, ট্যাব ও কম্পিউটারে সুন্দরভাবে দেখাবে।</p></div>
+    <div class="card"><div class="icon">⚙️</div><h3>সহজে পরিবর্তনযোগ্য</h3><p>পরে নতুন পেজ ও প্রয়োজনীয় ফিচার যোগ করা যাবে।</p></div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <h2 class="section-title">যোগাযোগ</h2>
+  <p class="section-text">এখানে পরে ফোন নম্বর, ইমেইল বা যোগাযোগের ফর্ম যোগ করা যাবে।</p>
+</section>
+</main>
+
+<footer>© 2026 আমার ওয়েবসাইট — সর্বস্বত্ব সংরক্ষিত</footer>
+</body>
+</html>
